@@ -6,13 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Daram1007/argocd.git
+    repoURL: https://github.com/Daram1007/practice-repo-public.git
     targetRevision: main
-    path: .
+    path: nginx-app         # <-- Path to Deployment & Service manifests
   destination:
     server: https://kubernetes.default.svc
     namespace: default
   syncPolicy:
     automated:
-      prune: true       # Remove resources deleted from the Git repo
-      selfHeal: true    # Optional: restore manually changed resources to match Git
+      prune: true
+      selfHeal: true
