@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Daram1007/practice-repo-public.git
+    repoURL: https://github.com/Daram1007/argocd
     targetRevision: main
     path: nginx-app         # <-- Path to Deployment & Service manifests
   destination:
